@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form method="post">
+    <form method="post" action="tarefa_editar.php">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
