@@ -63,17 +63,17 @@
                 <h2>Tarefa :: Editar</h2>
                 <div class="form-group">
                     <label>Id</label>
-                    <input type="text" class="form-control" required="" placeholder="Id da tarefa" name="txtId">
+                    <input value= "<?php echo $id ?>" type="text" class="form-control" required="" placeholder="Id da tarefa" name="txtId">
                 </div>
 
                 <div class="form-group">
                     <label>Descrição</label>
-                    <input type="text" class="form-control" required="" placeholder="Descricao da tarefa" name="txtDescricao">
+                    <input value= "<?php echo $descricao ?>" type="text" class="form-control" required="" placeholder="Descricao da tarefa" name="txtDescricao">
                 </div>
 
                 <div class="form-group">
                     <label>Data</label>
-                    <input type="date" class="form-control" required="" name="txtData">
+                    <input value= "<?php echo $data_entrega ?>" type="date" class="form-control" required="" name="txtData">
                 </div>
 
                 <div class="form-group">
@@ -88,18 +88,19 @@
 
                 <div class="form-group">
                     <label>Responsável</label>
-                    <input type="text" class="form-control" placeholder="Responsável pela tarefa" name="txtResponsavel">
+                    <input value= "<?php echo $responsavel
+                     ?>" type="text" class="form-control" placeholder="Responsável pela tarefa" name="txtResponsavel">
                 </div>
 
 
                 <br>
                 <div class="form-group">
 
-                    <button type="submit" class="btn btn-primary" name="btEditar">
+                    <button formaction="tarefa_atualizar.php" type="submit" class="btn btn-primary" name="btEditar">
                         Editar
                     </button>
 
-                    <button type="submit" class="btn btn-warning" name="btExcluir">
+                    <button formaction="tarefa_excluir.php" type="submit" class="btn btn-warning" name="btExcluir">
                         Excluir
                     </button>
 
